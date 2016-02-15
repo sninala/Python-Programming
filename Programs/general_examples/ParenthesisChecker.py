@@ -1,6 +1,6 @@
-import Stack
-def parChecker(symbolString):
-    s = Stack()
+from Programs.data_structures import Stack
+def ParenthesisChecker(symbolString):
+    s = Stack.Stack()
     balanced = True
     index = 0
     while index < len(symbolString) and balanced:
@@ -20,5 +20,5 @@ def parChecker(symbolString):
     else:
         return False
 
-print(parChecker('((()))'))
-print(parChecker('(()'))
+print(ParenthesisChecker('((()))'))
+print(ParenthesisChecker('(()'))
