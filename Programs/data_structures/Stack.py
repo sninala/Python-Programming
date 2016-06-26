@@ -1,30 +1,30 @@
 class Stack:
-     def __init__(self):
-         '''
-         creates a new stack object
-         '''
-         self.items = []
+    def __init__(self):
+        '''
+        creates a new stack object
+        '''
+        self.items = []
+    
+    def isEmpty(self):
+        '''
+        returns True if Stack is empty, else returns false
+        '''
+        return self.items == []
 
-     def isEmpty(self):
-         '''
-         returns True if Stack is empty, else returns false
-         '''
-         return self.items == []
+    def push(self, item):
+        '''
+        adds a new item to the top of the stack, returns nothing.
+        '''
+        self.items.append(item)
 
-     def push(self, item):
-         '''
-         adds a new item to the top of the stack, returns nothing.
-         '''
-         self.items.append(item)
+    def pop(self):
+        return self.items.pop()
 
-     def pop(self):
-         return self.items.pop()
+    def peek(self):
+        return self.items[len(self.items)-1]
 
-     def peek(self):
-         return self.items[len(self.items)-1]
-
-     def size(self):
-         return len(self.items)
+    def size(self):
+        return len(self.items)
 
     
     
