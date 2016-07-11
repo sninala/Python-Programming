@@ -7,9 +7,9 @@ def binarySearch(items, item):
             return True
         else:
             if(item > items[middleElement]):
-                binarySearch(items[middleElement+1:], item)
+                return binarySearch(items[middleElement+1:], item)
             else:
-                binarySearch(items[:middleElement+1], item)
+                return binarySearch(items[:middleElement-1], item)
 
 testlist = [0, 1, 2, 8, 13, 17, 19, 32, 42,]
 print(binarySearch(testlist, 3))
