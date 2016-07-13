@@ -1,5 +1,5 @@
 class A: #classic class
-    attr = 1 # 
+    attr = 1
 class B(A): # B and C both lead to A
     pass
 class C(A):
