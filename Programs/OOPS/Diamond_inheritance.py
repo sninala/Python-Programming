@@ -1,3 +1,5 @@
+
+###classic classes, search procedure is strictly depth first
 class A: #classic class
     attr = 1
 class B(A): # B and C both lead to A

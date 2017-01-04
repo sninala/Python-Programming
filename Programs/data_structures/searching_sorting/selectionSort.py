@@ -4,7 +4,7 @@ def selectionSort(items):
     iterations = len(items) -1
     while iterations:
         maxValuePosition = 0
-        for current_position in range(iterations+1):
+        for current_position in range(1, iterations+1):
             if items[current_position] > items[maxValuePosition]:
                 maxValuePosition = current_position
         temp = items[iterations]

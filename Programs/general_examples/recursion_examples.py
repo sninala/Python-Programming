@@ -8,7 +8,7 @@ List = range(1,101)
 print calcsum(List)
 
 def fact(number):
-    if number == 0:
+    if number == 1:
         return 1
     else:
         return number * fact(number-1)

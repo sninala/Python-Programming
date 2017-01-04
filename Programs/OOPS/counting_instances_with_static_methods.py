@@ -6,6 +6,9 @@ class SuperClass:
     @staticmethod
     def printNumberOfInstances():
         print "Number of instances {}".format(SuperClass.numberOfInstances)
+    @classmethod
+    def printInstances(cls):
+        print "Number of instances {}".format(SuperClass.numberOfInstances)
 
 """a = SuperClass()
 b = SuperClass()
@@ -16,7 +19,7 @@ class SubClass(SuperClass):
     @staticmethod
     def printNumberOfInstances():
         print "In Subclass"
-        SuperClass.printNumberOfInstances()
+        SuperClass.printInstances()
 
 a = SubClass()
 b = SubClass()
